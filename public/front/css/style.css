@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*:focus{
+    outline:0!important;
+}
+@font-face {
+    font-family: 'heavy_dock11';
+    src: url('../fonts/heavy_dock11.otf');
+}
+@font-face {
+    font-family: 'Futura';
+    src: url('../fonts/Futura.ttc');
+}

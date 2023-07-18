@@ -1,0 +1,93 @@
+@extends('layouts.front.base')
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+@section('pageTitle', 'Customer Login')
+@section('custom-style')
+    <style>
+        .sticky {
+            z-index: 1000 !important;
+        }
+
+
+
+        /* The sticky class is added to the header with JS when it reaches its scroll position */
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 999999;
+
+        }
+
+        #free-class:hover {
+            color: #8fd241 !important;
+            background-color: rgb(0 0 0) !important;
+        }
+
+
+        #icon {
+            margin-left: -30px;
+            cursor: pointer;
+        }
+
+        #icon1 {
+            margin-left: 462px;
+            cursor: pointer;
+        }
+
+        @media(max-width: 1440px) {
+            #icon1 {
+                margin-left: 448px;
+            }
+        }
+
+        @media(max-width: 1250px) {
+            #icon1 {
+                margin-left: 90%;
+            }
+        }
+
+        @media(max-width: 768px) {
+            #icon1 {
+                margin-left: 88%;
+            }
+        }
+
+        @media(max-width: 425px) {
+            #icon1 {
+                margin-left: 92%;
+            }
+        }
+
+        @media(max-width: 375px) {
+            #icon1 {
+                margin-left: 90%;
+            }
+        }
+
+        @media(max-width: 320px) {
+            #icon1 {
+                margin-left: 88%;
+            }
+        }
+
+    </style>
+@endsection
+@section('content')
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.6.1/iframeResizer.min.js"></script>
+    <iframe id="glofox_1" src="https://app.glofox.com/portal/#/branch/61b2187f0f16027667682fe3/memberships?login"
+        width="100%" height="0" scrolling="no" frameborder="0"></iframe>
+    <div style="display:flex; justify-content:center; text-decoration:none;font-family: Arial, Helvetica, sans-serif;">
+        powered by<a style="text-decoration: none; font-family: Arial, Helvetica, sans-serif; "
+            href="https://www.glofox.com"><b> Glofox</b></a></div>
+    <script>
+        iFrameResize({
+            log: false,
+            checkOrigin: false,
+            tolerance: 10,
+            sizeHeight: true,
+            heightCalculationMethod: 'lowestElement',
+            minHeight: 300,
+            scrolling: 'auto'
+        }, '#glofox_1')
+    </script>
+@endsection

@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*:focus{
+    outline:0!important;
+}
+@font-face {
+    font-family: 'heavy_dock11';
+    src: url('../fonts/heavy_dock11.otf');
+}
+@font-face {
+    font-family: 'Futura';
+    src: url('../fonts/Futura.ttc');
+}
+body{
+    border-top: 55px solid #000; 
+    border-bottom: 55px solid #000; 
+}
+.title{
+    font-family: 'Futura'; 
+}
+.rate-text{
+    padding: 2rem 0;
+}
+.rate-text p{
+    color: #000;
+    font-size: 17px;
+    font-family: 'Futura';
+}
+.rate{
+justify-content: center;
+}
+.rate .col-1{
+text-align: center;
+background-color: #000;
+border-left: 1px solid #fff;
+padding: 5px 0;
+font-family: 'Futura';
+}
+.rate .btn{
+    box-shadow: none;
+    color: #fff;
+}
+
+.box{
+    margin: 2rem 0;
+    line-height: 40px;
+    box-shadow: 2px 3px 5px 0px #8c878730;
+}
+.box div{
+    border: 1px solid rgb(120 113 113 / 13%);
+    padding-left: 1rem;
+}
+.box label{
+    font-family: 'Futura';
+    font-size: 18px;  
+}
+textarea{
+    min-height: 135px!important;
+    max-height: 70px;
+    width: 100%;
+    border: 1px solid rgb(120 113 113 / 13%);
+    padding: 15px;
+    margin: 1rem 0;
+    box-shadow: 2px 3px 5px 0px #8c878730;
+}
+.btn-submit{
+    font-family: 'Futura';
+    font-size: 20px; 
+    padding: .7rem 7rem;
+    background-color: black;
+    color: #fff;
+    box-shadow: none!important;
+}
+.btn-submit:hover{
+    background-color:#8fd141;
+    color: #000;
+}
+.powered{
+    font-family: 'Futura';
+    color: black;
+}
+.powered ul{
+    display: flex;
+    justify-content: center;
+}
+.powered ul li{
+    padding-left: 10px;
+}
+.powered ul li a{
+    color: #000;
+text-decoration: underline;
+}
+.powered ul li a:hover{
+    color: #8fd141;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f2ece2;
+    
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(2,0,36);
+   background: linear-gradient(45deg, #90d242, #5c7c36);
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    border-radius: 5px;
+  }
+ .button-active {
+    background: #8fd141;
+    border-radius: 50%;
+
+  }
+  .box2{
+    background: #a1a4a614;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .box2 p{
+    font-family: 'Futura';
+   margin-bottom: 0;
+  }
+  @media (max-width:575px) {
+      #button10{
+          position: relative;
+          left: -5px;
+      }
+      .rate .btn{
+          font-size: 14px;
+          width: 25px;
+              height: 25px;
+              text-align: center;
+              padding: 2px;
+      }
+  }
